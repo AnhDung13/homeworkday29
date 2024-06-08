@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slide-container {
+  overflow: hidden;
+  width: 1200px;
+  margin: 30px auto;
+  position: relative;
+}
+.slide {
+  display: flex;
+  transition: 0.5s ease-in-out;
+}
+
+.slide img {
+  display: block;
+}
+.btn-next,
+.btn-prev {
+  padding: 0 10px 15px;
+  display: block;
+  position: absolute;
+  font-size: 50px;
+  color: #fff;
+  top: 50%;
+  translate: 0 -50%;
+  background: rgba(0, 0, 0, 0.483);
+  cursor: pointer;
+  user-select: none;
+}
+.btn-next {
+  right: 0;
+}
